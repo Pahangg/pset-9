@@ -1,7 +1,9 @@
 body {
   text-align: center;
   font-family: "Ariel", monospace;
-  background-color:#240D60;
+  background-image: url(https://motionarray.imgix.net/preview-143179-ClMb14CISB-high_0000.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -9,7 +11,7 @@ h1 {
   font-family: "Major Mono Display", monospace;
   font-size: 50px;
   margin: 2%;
-  color: #D0CCCD;
+  color: white;
 }
 
 h2 {
@@ -18,8 +20,8 @@ h2 {
   margin: 0.5%;
   border-style: dotted;
   padding: 10px;
-  background-color:#DEDBD7;
-  color: #213B48;
+  background-color:	#280226;
+  color: white;
 }
 
 .container {
@@ -52,7 +54,7 @@ h2 {
 }
 
 .square:hover {
-  background-color:#1C3341;
+  background-color:	#8E0967;
   cursor: pointer;
 }
 
@@ -68,7 +70,7 @@ h2 {
 }
 
 #reset-button:hover {
-  background-color: #5A7684;
+  background-color: 	#8E0967;
   color: white;
   cursor: pointer;
 }
@@ -91,7 +93,7 @@ button {
 }
 
 button:hover {
-  background-color:#5A7684;
+  background-color:	#8E0967;
   color: white;
   cursor: pointer;
 }
