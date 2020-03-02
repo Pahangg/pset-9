@@ -78,7 +78,7 @@ function collisionDetection() {
 function drawBall() {
   ctx.beginPath();
   ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-  ctx.fillStyle = "white";
+  ctx.fillStyle = "#140D48";
   ctx.fill();
   ctx.closePath();
 }
