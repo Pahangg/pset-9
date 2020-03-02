@@ -3,13 +3,14 @@ a {
   font-family: "Roboto", monospace;
   font-size: 30px;
   padding: 125px;
-  color: black;
+  color: white;
 }
 
 h1{
   font-size: 100px;
   text-align: center;
   font-family: "Comic Sans MS", cursive, sans-serif;
+  color: white;
 }
 
 body {
