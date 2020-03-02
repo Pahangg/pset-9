@@ -153,15 +153,16 @@ border-radius: 20px;
 
 #reset-button {
   background-color: #AB1177;
-  border: 1px solid white;
+  border: 10px solid white;
   color: white;
   font-size: 21px;
   line-height: 55px;
-  margin: 3%;
+  margin: 5%;
   text-align: center;
   width: 456px;
-padding-left: 350px;
+padding-left: 400px;
 padding-right: 400px;
+border-radius: 40%;
 }
 
 #reset-button:hover {
