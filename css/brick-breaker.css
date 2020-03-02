@@ -1,0 +1,45 @@
+h1{
+  margin: 0 auto;
+  font-size: 75px;
+  margin: 2%;
+  padding-bottom: 20px;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+body {
+  background-color: #ccccff;
+  text-align: center;
+}
+
+canvas {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 4px solid black;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wins {
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  user-select: none;
+  width: 150px;
+}
+#wins {
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  user-select: none;
+  width: 150px;
+  background-color: white;
+}
+#table {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
