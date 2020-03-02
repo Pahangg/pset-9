@@ -1,22 +1,21 @@
-var wins = 0;
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-var ballRadius = 10;
+var ballRadius = 12.5;
 var x = canvas.width/2;
 var y = canvas.height-30;
 var dx = 2;
 var dy = -2;
-var paddleHeight = 10;
-var paddleWidth = 75;
+var paddleHeight = 15;
+var paddleWidth = 100;
 var paddleX = (canvas.width-paddleWidth)/2;
 var rightPressed = false;
 var leftPressed = false;
-var brickRowCount = 5;
+var brickRowCount = 7;
 var brickColumnCount = 3;
-var brickWidth = 75;
-var brickHeight = 20;
+var brickWidth = 100;
+var brickHeight = 25;
 var brickPadding = 10;
-var brickOffsetTop = 30;
+var brickOffsetTop = 50;
 var brickOffsetLeft = 30;
 var score = 0;
 var lives = 3;
@@ -67,10 +66,8 @@ function collisionDetection() {
           b.status = 0;
           score++;
           if(score == brickRowCount*brickColumnCount) {
-            alert("YOU WIN, CONGRATS!");
+            alert("YOU WIN!");
             document.location.reload();
-            wins++;
-            document.getElementById('wins').innerHTML = wins;
           }
         }
       }
@@ -81,14 +78,14 @@ function collisionDetection() {
 function drawBall() {
   ctx.beginPath();
   ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-  ctx.fillStyle = "#0095DD";
+  ctx.fillStyle = "white";
   ctx.fill();
   ctx.closePath();
 }
 function drawPaddle() {
   ctx.beginPath();
   ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
-  ctx.fillStyle = "#0095DD";
+  ctx.fillStyle = "#778DC7";
   ctx.fill();
   ctx.closePath();
 }
@@ -102,7 +99,7 @@ function drawBricks() {
         bricks[c][r].y = brickY;
         ctx.beginPath();
         ctx.rect(brickX, brickY, brickWidth, brickHeight);
-        ctx.fillStyle = "#0095DD";
+        ctx.fillStyle = "#778DC7";
         ctx.fill();
         ctx.closePath();
       }
@@ -111,12 +108,12 @@ function drawBricks() {
 }
 function drawScore() {
   ctx.font = "16px Arial";
-  ctx.fillStyle = "#0095DD";
+  ctx.fillStyle = "white";
   ctx.fillText("Score: "+score, 8, 20);
 }
 function drawLives() {
   ctx.font = "16px Arial";
-  ctx.fillStyle = "#0095DD";
+  ctx.fillStyle = "white";
   ctx.fillText("Lives: "+lives, canvas.width-65, 20);
 }
 
