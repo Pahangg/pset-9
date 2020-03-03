@@ -36,6 +36,6 @@ background: #303030;
 }
 
 .topnav a.active {
-  background-color:#AF127B;
+  background-color: pink;
   color: white;
 }
